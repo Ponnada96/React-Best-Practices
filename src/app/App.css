@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.post{
+  background-color: aliceblue;
+  margin: 8px;
+  padding: 8px;
+}
