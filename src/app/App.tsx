@@ -1,16 +1,10 @@
-import React, {
-  useCallback,
-  useDeferredValue,
+import {
   useEffect,
   useState,
-  useTransition,
 } from "react";
-import { startTransition } from "react";
 import "./App.css";
-import ChildComp from "../components/ChildComp";
-import { fakerDE as faker } from "@faker-js/faker";
-import InfiniteScroll from "../components/LoadingLargeList/InfinteScroll";
 import Debouncing from "../components/Debouncing/Debouncing";
+import Throttle from "../components/Throttling/Throttle";
 
 // const data = Array.from({ length: 1000 }, (_, i) => ({
 //   id: i,
@@ -30,6 +24,10 @@ function App() {
     <div>
       <h1>Debouncing</h1>
       <Debouncing />
+      <br />
+      <div>
+        <Throttle />
+      </div>
     </div>
   );
 }

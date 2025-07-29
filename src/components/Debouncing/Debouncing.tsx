@@ -18,7 +18,6 @@ function Debouncing() {
   return (
     <div>
       <input value={query} onChange={queryHandler} />
-      <h1 className="">Hello world!</h1>
     </div>
   );
 }
