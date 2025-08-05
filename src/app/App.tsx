@@ -1,10 +1,6 @@
-import {
-  useEffect,
-  useState,
-} from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
-import Debouncing from "../components/Debouncing/Debouncing";
-import Throttle from "../components/Throttling/Throttle";
+import ShowUserStatusWithCustHook from "../components/CustomHooks/ShowUserStatusWithCustHook";
 
 // const data = Array.from({ length: 1000 }, (_, i) => ({
 //   id: i,
@@ -22,11 +18,8 @@ function App() {
 
   return (
     <div>
-      <h1>Debouncing</h1>
-      <Debouncing />
-      <br />
       <div>
-        <Throttle />
+        <ShowUserStatusWithCustHook />
       </div>
     </div>
   );
